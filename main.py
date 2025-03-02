@@ -26,10 +26,8 @@ model = RandomForestClassifier(n_estimators=100, random_state=42)
 
 # Huấn luyện mô hình
 model.fit(X_train, y_train)
-
 # Dự đoán trên tập test
 y_pred = model.predict(X_test)
-
 # Đánh giá mô hình
 accuracy = accuracy_score(y_test, y_pred)
 print(f"Độ chính xác của mô hình: {accuracy:.2f}")
